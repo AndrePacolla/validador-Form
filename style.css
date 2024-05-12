@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+.screen{
+ display: flex;
+ height: 100vh;
+}
+.leftside{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftside img{
+    max-width: 900px;
+    height: auto;
+}
+.rightside{
+    width: 400px;
+    padding: 50px;
+    background-color: #ddd;
+}
+.rightside h1{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blueviolet;
+}
+
+.rightside label{
+    display: block;
+    margin: 40px 0;
+    margin-left: 30px;
+}
