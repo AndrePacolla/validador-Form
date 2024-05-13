@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 body{
@@ -16,7 +17,7 @@ body{
     align-items: center;
 }
 .leftside img{
-    max-width: 900px;
+    max-width: 850px;
     height: auto;
 }
 .rightside{
@@ -44,4 +45,10 @@ body{
     border-radius: 5px;
     outline: 0;
     padding: 8px;
+}
+
+div .rodapé{
+    display:flex ;
+    justify-content: center;
+    font-weight: bold;
 }
