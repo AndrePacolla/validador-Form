@@ -46,6 +46,14 @@ body{
     outline: 0;
     padding: 8px;
 }
+.errorJs{
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+    font-size: 11px;
+    background-color: rgba(255, 0, 0, 0.493);
+
+}
 
 div .rodapé{
     display:flex ;
