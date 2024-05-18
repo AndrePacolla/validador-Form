@@ -58,7 +58,7 @@ let validator = {
 
     let borders = form.querySelectorAll('input');
     for(let b = 0; b < borders.length; b++ ){
-        borders[b].style = ''
+        borders[b].style.borderColor = ''
     };
 
 
