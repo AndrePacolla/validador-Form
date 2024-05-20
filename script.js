@@ -8,6 +8,7 @@ let validator = {
 
         validator.clearErrors();
 
+
         for(let i = 0; i < inputs.length; i++ ){
             let input = inputs[i]
     
@@ -37,6 +38,9 @@ let validator = {
                 break;  
 
             case 'min' :
+                if(input.value.length < rDetails[1]){
+                    return `Campo tem que ter pelo menos ${rDetails[1]} caracteres`
+                }
 
                 break;          
             }
@@ -50,24 +54,20 @@ let validator = {
     
     let errorElement= document.createElement('div');
     errorElement.classList.add('errorJs'); // style css
-    errorElement.innerHTML = error ; // manipulando html
+    errorElement.innerHTML = error ;
 
-    input.parentElement.insertBefore(errorElement,input.ElementSibling) //  localiza-se  elemento do parente mais prox. no caso a LABEL . Dps  insere a div que criei dps do input , para ter efeito em tela vizualizado
+    input.parentElement.insertBefore(errorElement,input.ElementSibling)
    },
-   clearErrors :(input)=>{
+   clearErrors :()=>{
 
-    let borders = form.querySelectorAll('input');
-    for(let b = 0; b < borders.length; b++ ){
-        borders[b].style.borderColor = ''
-    };
-
-
-    let errorElements = document.querySelectorAll('.errorJs');
-
-    for(let r = 0; r < errorElements.length; r++){
-        errorElements[r].remove()
-    };
-
+   let errorsElement = document.querySelectorAll('.errorJs');
+        for(let e = 0; e < errorsElement.length; e++){
+            errorsElement[e].remove();
+        }
+   let errorsBorder = form.querySelectorAll('input');
+        for(let b =0; b < errorsBorder.length; b++){
+            errorsBorder[b].style.borderColor =''
+        }
    }
 
 
