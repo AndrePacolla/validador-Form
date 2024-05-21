@@ -61,7 +61,7 @@ let validator = {
     input.style.borderColor = 'red';
     
     let errorElement= document.createElement('div');
-    errorElement.classList.add('errorJs'); // style css
+    errorElement.classList.add('errorJs'); 
     errorElement.innerHTML = error ;
 
     input.parentElement.insertBefore(errorElement,input.ElementSibling)
