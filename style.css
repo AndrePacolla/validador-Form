@@ -36,6 +36,10 @@ body{
     display: block;
     margin: 40px 0;
     margin-left: 30px;
+    font-weight: bold;
+}
+label .btn{
+    font-weight: bold;
 }
 
 .rightside input{
@@ -59,7 +63,9 @@ div .rodapé{
     display:flex ;
     justify-content: center;
     font-weight: bold;
+    cursor: pointer;
 }
+
 div .form-img{
     display: flex;
     justify-content: center;
