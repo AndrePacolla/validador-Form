@@ -53,12 +53,11 @@ let validator = {
     showError: (input , error)=>{
 
         let errorElement = document.createElement('div');
-        errorElement.classList.add('errorJs')
+        input.style.borderColor = 'orange';
+        errorElement.classList.add('errorJs');
         errorElement.innerHTML = error;
 
-        input.parentElement.insertBefore(errorElement, input.nextElementSibling)
-        input.style.borderColor = 'orange'
-
+        input.parentElement.insertBefore(errorElement, input.nextElementSibling);
     },
 
     clearErrors :()=>{
@@ -71,11 +70,8 @@ let validator = {
         for(let i=0; i<inputColor.length; i++){
             inputColor[i].style = ''
         }
-
     }
 }
 
-
-
 let form = document.querySelector('.formValidator');
-form.addEventListener('submit',validator.handleSubmit)
+form.addEventListener('submit',validator.handleSubmit);

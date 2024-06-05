@@ -76,3 +76,19 @@ div .form-img img{
     width: 150px;
     height: auto;   
 }
+@media (max-width: 390px ){
+    
+    .screen{
+        display: flex;
+        flex-direction: column;
+    }
+    .leftside img{
+        padding: 40px;
+        width: 300px;
+        height: auto;
+    }
+    
+
+
+    
+}
